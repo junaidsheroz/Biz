@@ -4,19 +4,25 @@ public class BizFactory {
       Business biz = null; 
       
       //TODO: Use operation field (Hotel, Diner, PetShop) to create an object
-      //TODO: Load the data into the object and return it to caller
+      // TODO: Load the data into the object and return it to caller
       if (operation.compareTo("PetStore")==0)  {
-        // TODO: new and initialize a PetStore
+         // TODO: new and initialize a PetStore
+         PetStore ps = new PetStore(id, operation, misc);
+         ps.setNumberOfCats(misc);
 
-        }
+      }
       
       else if (operation.compareTo("Diner")==0) {
         // TODO: new and initialize a Diner
+         Diner d = new Diner(id, operation, misc);
+         d.setTables(misc);
       
       }
       
       else if (operation.compareTo("Hotel")==0) {
          // TODO: new and initialize a Hotel
+         Hotel h = new Hotel(id, operation, misc);
+         h.setNumberRooms(misc);
       }
       return biz ; 
    }
