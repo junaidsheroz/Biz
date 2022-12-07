@@ -37,19 +37,13 @@ public class BizReader {
                   }
                       
                   //TODO: Use the values from the tokens array to call the BizFactory 
-                  // solution
                   Business biz = bizFactory.newBiz(id, operation, name, address, rating, misc);
                   //TODO: The BizFactory is responsible for creation and initialization of the objects
-                  // solution
-                  Business biz1 = new Business(id, operation, name, address, rating, misc);
-
                   //TODO: The BizFacotry must create an object of the correct type: Diner, Hotel or PetStore and return it
-                  // solution
-                  
-                  
                   //TODO: you must eliminate below println, this printing must be moved to main.java and use the getDescription method 
                   System.out.println(id+" "+operation+" \'"+name+"\' ["+address+"] rating="+ rating + " misc=" + misc); 
-                  //TODO: add the current Business object to the ArrayList here, then eliminate the above println   
+                  //TODO: add the current Business object to the ArrayList here, then eliminate the above println
+                  bizList.add(biz);   
                }
                lineCount++; 
             }  
@@ -58,7 +52,10 @@ public class BizReader {
          catch (IOException e) {  
             e.printStackTrace();  
          }
-         //TODO: return the ArrayList of business objects to the caller here  
+         //TODO: return the ArrayList of business objects to the caller here ;
+         // solution
+         return;
+
      }
 }
 
