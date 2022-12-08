@@ -7,35 +7,36 @@ public class BizFactory {
       // TODO: Load the data into the object and return it to caller
       if (operation.compareTo("PetStore")==0)  {
          // TODO: new and initialize a PetStore
-         PetStore ps = new PetStore(id, operation, misc);
-         ps.setNumberOfCats(misc);
-         ps.setName(name);
-         ps.setAddress(address);
-         ps.setRating(r);
-         biz = ps;
+         PetStore pet = new PetStore(id, operation, misc);
+         pet.setNumberOfCats(misc);
+         pet.setAddress(address);
+         pet.setRating(r);
+         pet.setName(name);
+         
+         biz = pet;
 
       }
       
       else if (operation.compareTo("Diner")==0) {
         // TODO: new and initialize a Diner
-         Diner d = new Diner(id, operation, misc);
-         d.setTables(misc);
-         d.setAddress(address);
-         d.setName(name);
-         d.setRating(r);
-         biz= d;
+         Diner diner = new Diner(id, operation, misc);
+         diner.setTables(misc);
+         diner.setAddress(address);
+         diner.setName(name);
+         diner.setRating(r);
+         biz= diner;
       
       }
       
       else if (operation.compareTo("Hotel")==0) {
          // TODO: new and initialize a Hotel
-         Hotel h = new Hotel(id, operation, misc);
-         h.setNumberRooms(misc);
-         h.setAddress(address);
-         h.setName(name);
-         h.setRating(r);
+         Hotel hotel = new Hotel(id, operation, misc);
+         hotel.setName(name);
+         hotel.setAddress(address);
+         hotel.setNumberRooms(misc);         
+         hotel.setRating(r);
          
-         biz = h;
+         biz = hotel;
       }
       return biz; 
    }
