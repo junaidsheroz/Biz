@@ -7,7 +7,7 @@ public class Main {
      
       // this reads a csv file from  \Biz\classes subdir of the current project 
       //TODO: make the source.LoadCSV return an ArrayList of Business objects 
-      source.LoadCSV("..//BusinessList.csv") ;
+      source.LoadCSV("../classes/BusinessList.csv") ;
       
       //TODO: iterate the bizlist and call getDescription on each item in the list to print the list details
       // solution
