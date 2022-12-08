@@ -1,5 +1,5 @@
 import java.util.List;
-import java.util.ArrayList; 
+import java.util.ArrayList;
 
 public class Main {
    public static void main(String[] args) {
@@ -10,6 +10,11 @@ public class Main {
       source.LoadCSV("BusinessList.csv") ;
       
       //TODO: iterate the bizlist and call getDescription on each item in the list to print the list details
+      // solution
+      List<Business> bizList = source.bizList;
+      for (Business biz : bizList) {
+          System.out.println(biz.getDescription());
+      }
         
    }  
 } 
