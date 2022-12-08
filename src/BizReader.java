@@ -14,7 +14,7 @@ public class BizReader {
       //TODO: create (new) a BizFactory to supply correct type of objects 
       BizFactory bizFactory = new BizFactory();
       
-      public void  LoadCSV(String fileName) {
+      public void LoadCSV(String fileName) {
          try {  
             BufferedReader br = new BufferedReader(new FileReader(fileName));  
             while ((line = br.readLine()) != null)   {  
@@ -41,7 +41,7 @@ public class BizReader {
                   //TODO: The BizFactory is responsible for creation and initialization of the objects
                   //TODO: The BizFacotry must create an object of the correct type: Diner, Hotel or PetStore and return it
                   //TODO: you must eliminate below println, this printing must be moved to main.java and use the getDescription method 
-                  // System.out.println(id+" "+operation+" \'"+name+"\' ["+address+"] rating="+ rating + " misc=" + misc); 
+                  System.out.println(id+" "+operation+" \'"+name+"\' ["+address+"] rating="+ rating + " misc=" + misc); 
                   //TODO: add the current Business object to the ArrayList here, then eliminate the above println
                   bizList.add(biz);   
                }
@@ -53,9 +53,8 @@ public class BizReader {
             e.printStackTrace();  
          }
          //TODO: return the ArrayList of business objects to the caller here ;
-         // solution
-         return;
 
+         return;
      }
 }
 

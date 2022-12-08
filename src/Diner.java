@@ -15,9 +15,11 @@ public class Diner extends Business {
       return tables;
    }
    
-    public String getDescription() {
+   public String getDescription() {
      //TODO: call super.getDescription() to get the basic information description string from parent class
-      return super.getDescription();
+      super.getDescription();
+      String temp =  "tables=" + tables;
+      return temp;
    }
 
 }
