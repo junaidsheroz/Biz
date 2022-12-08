@@ -54,7 +54,7 @@ public class BizReader {
          }
          //TODO: return the ArrayList of business objects to the caller here ;
          // solution
-         return bizList;
+         return;
 
      }
 }
