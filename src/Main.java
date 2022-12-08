@@ -12,8 +12,8 @@ public class Main {
       //TODO: iterate the bizlist and call getDescription on each item in the list to print the list details
       // solution
       List<Business> bizList = source.bizList;
-      for (Business biz : bizList) {
-          System.out.println(biz.getDescription());
+      for (Business biz : bizList) {;
+         System.out.println(biz.getDescription());
       }
         
    }  

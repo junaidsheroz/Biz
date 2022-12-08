@@ -9,6 +9,7 @@ public class BizFactory {
          // TODO: new and initialize a PetStore
          PetStore ps = new PetStore(id, operation, misc);
          ps.setNumberOfCats(misc);
+         biz = ps;
 
       }
       
@@ -16,6 +17,7 @@ public class BizFactory {
         // TODO: new and initialize a Diner
          Diner d = new Diner(id, operation, misc);
          d.setTables(misc);
+         biz= d;
       
       }
       
@@ -23,8 +25,9 @@ public class BizFactory {
          // TODO: new and initialize a Hotel
          Hotel h = new Hotel(id, operation, misc);
          h.setNumberRooms(misc);
+         biz = h;
       }
-      return biz ; 
+      return biz; 
    }
 
 }

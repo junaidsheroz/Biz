@@ -16,10 +16,7 @@ public class PetStore extends Business {
     }
     
      public String getDescription() {
-        super.getDescription();
-        String temp =  "NumberOfCats = " + NumberOfCats;  
-        return temp; 
-
+        return super.getDescription();
     }
 }
 
