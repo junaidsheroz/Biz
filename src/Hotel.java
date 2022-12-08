@@ -17,8 +17,8 @@ public class Hotel extends Business {
    
    public String getDescription() {
       //TODO: call super.getDescription() to get the basic information description string from parent class
-      super.getDescription();
-      String temp =  "rooms=" + rooms;  
+     
+      String temp =  super.getDescription()+ " misc=" + rooms;
       return temp;
 
       

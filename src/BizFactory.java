@@ -9,6 +9,9 @@ public class BizFactory {
          // TODO: new and initialize a PetStore
          PetStore ps = new PetStore(id, operation, misc);
          ps.setNumberOfCats(misc);
+         ps.setName(name);
+         ps.setAddress(address);
+         ps.setRating(r);
          biz = ps;
 
       }
@@ -17,6 +20,9 @@ public class BizFactory {
         // TODO: new and initialize a Diner
          Diner d = new Diner(id, operation, misc);
          d.setTables(misc);
+         d.setAddress(address);
+         d.setName(name);
+         d.setRating(r);
          biz= d;
       
       }
@@ -25,6 +31,10 @@ public class BizFactory {
          // TODO: new and initialize a Hotel
          Hotel h = new Hotel(id, operation, misc);
          h.setNumberRooms(misc);
+         h.setAddress(address);
+         h.setName(name);
+         h.setRating(r);
+         
          biz = h;
       }
       return biz; 
